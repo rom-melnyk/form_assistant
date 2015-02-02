@@ -38,4 +38,7 @@ node_modules/
 # --------------------
 # App Files
 # --------------------
-# ...nothing here at the moment
+style.concat.css
+style.css.map
+.sass-cache/
+script.concat.js

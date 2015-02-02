@@ -1,0 +1,40 @@
+@import "vars";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.row:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4 {
+	float: left;
+}
+
+.col, .col-1 { width: 25%; }
+.col-2 { width: 50%; }
+.col-3 { width: 75%; }
+.col-4 { width: 100%; }
+
+h1, h2, h3 {
+	margin-top: 1em;
+	margin-bottom: .3em;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	padding: .2em .3em;
+	border: 1px solid $primary_color;
+	border-radius: .1em;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "form_assistant",
+  "version": "0.1.0",
+  "description": "The Geegle Chrome extension. Helps with filling in standard forms",
+  "keywords": "google chrome form assistent fill autofill helper",
+  "author": "Roman Melnyk <email.rom.melnyk@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rom-melnyk/form_assistant/issues",
+    "eamil": "email.rom.melnyk@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rom-melnyk/form_assistant"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^2.0.0"
+  }
+}
