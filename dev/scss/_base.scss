@@ -1,0 +1,55 @@
+@import "vars";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* --------------------------- Grid --------------------------- */
+.row:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4 {
+	float: left;
+}
+
+.col, .col-1 { width: 25%; }
+.col-2 { width: 50%; }
+.col-3 { width: 75%; }
+.col-4 { width: 100%; }
+
+/* --------------------------- Form --------------------------- */
+input[type=text], textarea {
+  width: 100%;
+  padding: .2em .3em;
+  border: 1px solid $primary_color;
+  border-radius: .1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* --------------------------- Headers --------------------------- */
+h1, h2, h3 {
+  margin-top: 1em;
+  margin-bottom: .3em;
+}
+
+h1 { font-size: 200%; }
+h1 { font-size: 170%; }
+h1 { font-size: 130%; }
+
+/* --------------------------- Template --------------------------- */
+tpl[data-id] {
+  display: none;
+}
+
+tpl[data-rendered] {
+  display: block;
+}

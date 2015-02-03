@@ -1,5 +1,21 @@
 @import "base";
 
+body {
+  padding: 2em;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: $primary_color;
+  background-color: $primary_color_xx_lighter;
+}
+
+a {
+  color: $selected_color;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $selected_color_x_lighter;
+}
 
 .form-section {
 

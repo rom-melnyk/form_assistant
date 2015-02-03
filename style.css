@@ -3,10 +3,7 @@
   margin: 0;
   padding: 0; }
 
-body {
-  font-size: 18px;
-  font-family: sans-serif; }
-
+/* --------------------------- Grid --------------------------- */
 .row:after {
   content: " ";
   display: block;
@@ -28,15 +25,50 @@ body {
 .col-4 {
   width: 100%; }
 
-h1, h2, h3 {
-  margin-top: 1em;
-  margin-bottom: .3em; }
-
+/* --------------------------- Form --------------------------- */
 input[type=text], textarea {
   width: 100%;
   padding: .2em .3em;
   border: 1px solid #267373;
   border-radius: .1em; }
+
+textarea {
+  resize: vertical; }
+
+/* --------------------------- Headers --------------------------- */
+h1, h2, h3 {
+  margin-top: 1em;
+  margin-bottom: .3em; }
+
+h1 {
+  font-size: 200%; }
+
+h1 {
+  font-size: 170%; }
+
+h1 {
+  font-size: 130%; }
+
+/* --------------------------- Template --------------------------- */
+tpl[data-id] {
+  display: none; }
+
+tpl[data-rendered] {
+  display: block; }
+
+body {
+  padding: 2em;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #267373;
+  background-color: #b3e5e6; }
+
+a {
+  color: #732626;
+  text-decoration: underline; }
+
+a:hover {
+  color: #bf4040; }
 
 .main-container {
   width: 20em;

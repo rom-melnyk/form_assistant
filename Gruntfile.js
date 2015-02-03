@@ -1,11 +1,12 @@
 'use strict';
 
 var scssDir = 'dev/scss/';
-var jsFiles = [];
+var jsDir = 'dev/js/';
+var jsFiles = ['base', 'test-data', 'template'];
 var jsDest = 'script.concat.js';
 
 jsFiles = jsFiles.map(function (file) {
-  return 'dev/js/' + file + '.js';
+  return jsDir + file + '.js';
 });
 
 module.exports = function(grunt) {
@@ -43,6 +44,10 @@ module.exports = function(grunt) {
       css: {
         files: scssDir + '*',
         tasks: ['sass']
+      },
+      js: {
+        files: jsDir + '*',
+        tasks: ['concat']
       }
     }
   });
@@ -51,6 +56,8 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   //Default task(s).
-  grunt.registerTask('default', ['sass', 'concat', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat']);
+  grunt.registerTask('sass-watch', ['sass', 'watch:css']);
+  grunt.registerTask('js-watch', ['concat', 'watch:js']);
   grunt.registerTask('prod', ['sass', 'concat', 'uglify']);
 };

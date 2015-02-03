@@ -1,1 +1,9 @@
 $primary_color: hsla(180, 50, 30, 1);
+
+$primary_color_xx_lighter: lighten($primary_color, 50%);
+$primary_color_x_lighter: lighten($primary_color, 20%);
+
+$selected_color: adjust-hue($primary_color, 180);
+
+$selected_color_xx_lighter: lighten($selected_color, 50%);
+$selected_color_x_lighter: lighten($selected_color, 20%);
